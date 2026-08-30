@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Petit Bouchon</title>
+<style>
+  :root {
+    --cream: #faf6ef;
+    --ink: #2b2620;
+    --wine: #6b2737;
+    --gold: #b08d57;
+    --line: #e2d9c8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  header {
+    text-align: center;
+    padding: 4rem 1.5rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  header .eyebrow {
+    font-family: Verdana, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 0.8rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+  }
+
+  header p {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #6b6355;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: var(--wine);
+    margin-bottom: 1.2rem;
+    text-align: center;
+    position: relative;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0.6rem auto 0;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.9rem 0;
+    border-bottom: 1px dotted var(--line);
+    gap: 1rem;
+  }
+
+  .menu-item .name {
+    font-size: 1.05rem;
+  }
+
+  .menu-item .desc {
+    font-family: Verdana, sans-serif;
+    font-size: 0.8rem;
+    color: #7a7061;
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  .menu-item .price {
+    font-family: Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: var(--wine);
+    white-space: nowrap;
+  }
+
+  .infos {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 0.9rem;
+    color: #4a4438;
+  }
+
+  .infos p {
+    margin-bottom: 0.5rem;
+  }
+
+  .infos .label {
+    color: var(--wine);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-family: Verdana, sans-serif;
+    font-size: 0.75rem;
+    color: #8a8172;
+    border-top: 1px solid var(--line);
+  }
+
+  a.reserver {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+    background: var(--wine);
+    color: var(--cream);
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+  }
+
+  a.reserver:hover {
+    background: #55212d;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Cuisine traditionnelle</div>
+  <h1>Le Petit Bouchon</h1>
+  <p>Restaurant de quartier — Pau</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Le Menu</h2>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Soupe à l'oignon gratinée</div>
+        <span class="desc">Bouillon maison, croûtons, comté</span>
+      </div>
+      <div class="price">8 €</div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Terrine de campagne</div>
+        <span class="desc">Cornichons, pain de campagne</span>
+      </div>
+      <div class="price">9 €</div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Confit de canard</div>
+        <span class="desc">Pommes sarladaises, salade</span>
+      </div>
+      <div class="price">18 €</div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Blanquette de veau</div>
+        <span class="desc">Riz, légumes de saison</span>
+      </div>
+      <div class="price">17 €</div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Tarte tatin</div>
+        <span class="desc">Crème fraîche</span>
+      </div>
+      <div class="price">7 €</div>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <div class="name">Crème brûlée</div>
+        <span class="desc">Vanille de Madagascar</span>
+      </div>
+      <div class="price">7 €</div>
+    </div>
+
+  </section>
+
+  <section class="infos">
+    <h2>Infos pratiques</h2>
+    <p><span class="label">Adresse</span><br>12 rue des Cordeliers, 64000 Pau</p>
+    <p><span class="label">Horaires</span><br>Mardi – Samedi, 12h–14h / 19h–22h</p>
+    <p><span class="label">Téléphone</span><br>05 59 00 00 00</p>
+    <br>
+    <a class="reserver" href="tel:0559000000">Réserver une table</a>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Le Petit Bouchon — Tous droits réservés
+</footer>
+
+</body>
+</html>
